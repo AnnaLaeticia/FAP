@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@1,14..32,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+PL:wght@100..400&family=Playwrite+PT:wght@100..400&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+PL:wght@100..400&family=Playwrite+PT:wght@100..400&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+#container {
+    height: 100vh;
+    background: url("images/font2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header .logo p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+header .menu{
+   display: flex;
+   list-style: none;
+}
+header .menu li{
+    margin: 0 15px;
+}
+ header .menu li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+ }
+
+ .container-text {
+    height: calc(80vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container-text h1{
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ /************************************Section Qui sommes-nous*************************************/
+#presentation {
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+#presentation video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#presentation .container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+}
+
+#presentation h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#presentation .btn {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+ 
+/*******************************************Deuxième hedear**************************************************/
+ .header2 {
+      background: #594b0f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    
+    
+    .header2 .menu {
+        display: flex;
+        list-style: none;
+    }
+    .header2 .menu li{
+    margin: 0 15px;
+  }
+    .header2 .menu li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+   }
+  
+/*****************************************************Plus d'actualité button*************************************************/
+#actu h3{
+  text-align: center;
+  color: #594b0f;
+}
+#div .h{
+  text-align: center;
+  color: #594b0f;
+}
+.act {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #594b0f;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+
+    }
+
+.icon-plus {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+.h3{
+    text-align: center;
+    color: #594b0f;
+}
+ 
+/******************************Actualités****************************************/
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #0f3959;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card-footer {
+  background: transparent;
+  border-top: none;
+  font-size: 0.85rem;
+  color: #666;
+}
+/**********************En-tête des actualités****************************************/
+.actualites-header {
+  background: #0f3959;
+  color: white;
+}
+
+.actualites-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.actualites-header p { 
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+
+/* Bouton retour */
+.btn-secondary {
+  background-color: #0f3959;
+  border: none;
+  width: 500px;
+}
+
+.btn-secondary:hover {
+  background-color: #112d24;
+} 
+
+/***********************Maps***************************************************/
+#map h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #0f3959;
+  font-weight: bold;
+}
+
+
+
+/*********************************Footer le pied de la page********************/
+.site-footer {
+  background-color: #594b0f;
+  color: #fff;
+  font-size: 20px;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
